@@ -1,0 +1,42 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+
+font-family: 'Roboto Condensed', sans-serif;
+
+(body)
+////////////////////////////////////////////////
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+font-family: 'Cinzel', serif;
+
+(title)
+///////////////////////////////////////////////
+<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">	
+
+font-family: 'Racing Sans One', cursive;
+
+(h1)
+/////////////////////////////////////////////////
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:900" rel="stylesheet">
+
+font-family: 'Playfair Display SC', serif;
+
+(first page title)
+/////////////////////////////////////////////////
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+font-family: 'Inconsolata', monospace;
+
+(monospace)
+////////////////////////////////////////////////
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+font-family: 'Courgette', cursive;
+
+(handwriting)
+////////////////////////////////////////////////
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
+
+font-family: 'Roboto Slab', serif;
+
+(san rif two)
+///////////////////////////////////////////////////////////////////////////////////////////////////////////

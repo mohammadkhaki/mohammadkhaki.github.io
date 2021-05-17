@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.col-md-3{
+    max-width: 16.66666%;
+}
+.col-md-9{
+    max-width: 86.33334%;
+}
+.character {
+    height: 1322px;        
+}
+.print_mode{
+    visibility: hidden;
+    position: absolute;
+}
+
+

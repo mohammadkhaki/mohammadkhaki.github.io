@@ -1,0 +1,252 @@
+/*
+- background image
+- footer
+- arrow up and home
+- center-col-group
+- button overlay with image at background effect
+- title up navbar
+--- awesome	icon edit
+- submit_bar	
+- gallery-flex
+- image label sale	
+- overlay image effect
+- @media
+*/
+/*background image*/
+.background {
+  z-index: 1108;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  opacity: 1;
+  position: relative; }
+
+/*footer*/
+ul.footer {
+  list-style: none;
+  padding-left: 0; }
+  ul.footer li a {
+    font-size: 0.8em;
+    color: #555555;
+    line-height: 2.5em;
+    text-decoration: none; }
+    ul.footer li a:hover {
+      color: #b67454; }
+
+footer.footer_copyright_bottom {
+  justify-content: center;
+  align-items: center;
+  padding: 5px !important;
+  border-top: thin solid rgba(85, 85, 85, 0.55);
+  text-align: center;
+  font-size: 0.9em;
+  opacity: 0.55;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  footer.footer_copyright_bottom div {
+    text-align: center;
+    font-size: 0.8em;
+    opacity: 0.55;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+
+/*arrow up and home*/
+#arrow {
+  z-index: 1112;
+  display: none;
+  position: fixed;
+  bottom: 46px;
+  right: 5px;
+  font-size: 35px;
+  max-height: 40px;
+  cursor: pointer; }
+
+i.arrow {
+  color: rgba(151, 196, 216, 0.4); }
+  i.arrow:hover {
+    color: rgba(151, 196, 216, 0.8); }
+
+#home_logo_link {
+  z-index: 1112;
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  font-size: 35px;
+  max-height: 40px;
+  cursor: pointer; }
+
+i.home_logo_link {
+  color: rgba(151, 196, 216, 0.4); }
+  i.home_logo_link:hover {
+    color: rgba(151, 196, 216, 0.8); }
+
+/*center_col_group*/
+.center_col_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .center_col_group * {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+
+/*button overlay with image at background effect*/
+button.button_overlay_img_background {
+  position: relative;
+  width: 50%;
+  background-color: transparent;
+  border-color: transparent; }
+  button.button_overlay_img_background img {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    position: relative; }
+
+nav.navbar ul li:active a {
+  color: #b67454 !important; }
+nav.navbar ul li a {
+  color: black !important; }
+  nav.navbar ul li a:hover {
+    color: #b67454 !important; }
+
+ul.title_padding_item li {
+  padding: 35px; }
+
+.navbar-baseColor .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+/*awesome icon edit*/
+ul.awesome_edit li a {
+  padding-left: 5px;
+  padding-right: 5px; }
+  ul.awesome_edit li a span i {
+    font-size: 18px; }
+
+/*submit_bar*/
+form.submit_bar {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  form.submit_bar input {
+    margin: 0 !important;
+    height: 40px;
+    border-radius: 0;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    background-color: transparent; }
+    form.submit_bar input:focus {
+      color: whitesmoke !important;
+      background-color: transparent !important;
+      border-color: whitesmoke !important;
+      box-shadow: 0 0 0 0.1rem whitesmoke !important; }
+  form.submit_bar button {
+    margin: 0 !important;
+    height: 40px;
+    border-radius: 0;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    background-color: transparent; }
+    form.submit_bar button:hover, form.submit_bar button:active, form.submit_bar button:focus {
+      color: black !important;
+      background-color: whitesmoke !important;
+      border-color: whitesmoke !important;
+      box-shadow: 0 0 0 0.1rem whitesmoke !important; }
+
+/*gallery-flex*/
+.gallery_flex div div {
+  display: flex;
+  flex-wrap: wrap; }
+  .gallery_flex div div > div {
+    padding: 10px; }
+  .gallery_flex div div div div {
+    overflow: hidden;
+    padding: 0px; }
+    .gallery_flex div div div div img {
+      align-self: center !important;
+      height: auto;
+      max-width: 100%;
+      width: 100%;
+      transform: scale(1);
+      transition: transform .4s ease-in-out;
+      /* zoom effect*/ }
+    .gallery_flex div div div div:hover img {
+      transform: scale(1.03);
+      /*zoom effect*/ }
+
+/*image label sale*/
+div.sale_label_outter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(40%, -50%);
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(151, 196, 216, 0.8); }
+
+/*overlay image effect*/
+div.overlay {
+  position: relative;
+  width: 50%; }
+  div.overlay img {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden; }
+  div.overlay:hover img {
+    opacity: 0.3; }
+  div.overlay:hover .overlay_middle {
+    opacity: 1; }
+
+.overlay_middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: transparent;
+  border-color: #b97d5f;
+  color: black;
+  padding: 8px 16px; }
+  .overlay_middle:hover {
+    opacity: 1;
+    background-color: #b97d5f;
+    color: white; }
+
+.titleBar_padding {
+  padding: 0 !important; }
+
+/*/////////////////////////////////////////////	*/
+/*@media*/
+@media (max-width: 768px) {
+  /*extra small and sm*/
+  .fixed_top_sm_lower {
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; }
+
+  ul.title_padding_item li {
+    padding: 5px 0; }
+
+  .bg-baseTransparent {
+    background-color: whitesmoke !important; }
+
+  a.bg-baseTransparent:hover, a.bg-baseTransparent:focus,
+  button.bg-baseTransparent:hover,
+  button.bg-baseTransparent:focus {
+    background-color: #b5b5b5 !important; }
+
+  .titleBar_padding {
+    padding-right: 15px;
+    padding-left: 15px; } }

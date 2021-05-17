@@ -1,0 +1,36 @@
+//define this color at _color.scss file of materialize component at $colors
+$MyBaseColor:hsla(0,0,0,1.00);
+$baseColor: (
+  "base":      $MyBaseColor,
+  "lighten-5": lighten(adjust-hue($MyBaseColor,1%),45%),
+  "lighten-4": lighten($MyBaseColor,35%),
+  "lighten-3": lighten($MyBaseColor,25%),
+  "lighten-2": lighten($MyBaseColor,15%),
+  "lighten-1": lighten($MyBaseColor,7%),
+  "darken-1":  darken($MyBaseColor,2%),
+  "darken-2":  darken($MyBaseColor,4%),
+  "darken-3":  darken($MyBaseColor,6%),
+  "darken-4":  darken($MyBaseColor,10%),
+  "accent-1":  lighten(adjust-hue($MyBaseColor,2%),25%),
+  "accent-2":  lighten(adjust-hue($MyBaseColor,-1%),15%),
+  "accent-3":  lighten(adjust-hue($MyBaseColor,-1%),0%),
+  "accent-4":  lighten(adjust-hue($MyBaseColor,-5%),0%)	
+);
+$MyBaseColor2:hsla(348,83%,35%,1.00);
+$baseColor2: (
+  "base":      $MyBaseColor2,
+  "lighten-5": lighten(adjust-hue($MyBaseColor2,1%),45%),
+  "lighten-4": lighten($MyBaseColor2,35%),
+  "lighten-3": lighten($MyBaseColor2,25%),
+  "lighten-2": lighten($MyBaseColor2,15%),
+  "lighten-1": lighten($MyBaseColor2,7%),
+  "darken-1":  darken($MyBaseColor2,2%),
+  "darken-2":  darken($MyBaseColor2,4%),
+  "darken-3":  darken($MyBaseColor2,6%),
+  "darken-4":  darken($MyBaseColor2,10%),
+  "accent-1":  lighten(adjust-hue($MyBaseColor2,2%),25%),
+  "accent-2":  lighten(adjust-hue($MyBaseColor2,-1%),15%),
+  "accent-3":  lighten(adjust-hue($MyBaseColor2,-1%),0%),
+  "accent-4":  lighten(adjust-hue($MyBaseColor2,-5%),0%)	
+);
+

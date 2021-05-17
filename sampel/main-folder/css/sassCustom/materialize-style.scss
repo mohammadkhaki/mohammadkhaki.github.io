@@ -1,0 +1,55 @@
+/*for add color in materialize for change materialize base setting should be
+define color in palette.sass then define in  _color.sass
+after define can change color are available in materilize like below such as $primary-color 
+you can change this color in palette file also this color is diffrent with customstyle css
+at last check compile materialize.sass and materialize-style.sass _color.sass and palette.sass*/
+@import "../materialize/materialize-src/sass/components/_color.scss";
+$primary-color: color("baseColor", "lighten-1") !default;
+$secondary-color: color("baseColor2", "lighten-1") !default;
+$primary-color-light: false !default;
+$primary-color-dark: false !default;
+@if not $primary-color-light {$primary-color-light: lighten($primary-color, 15%);}
+@if not $primary-color-dark {$primary-color-dark: darken($primary-color, 15%);}
+$datepicker-weekday-bg: darken($secondary-color, 7%) !default;
+$datepicker-date-bg: $secondary-color !default;
+$datepicker-selected: $secondary-color !default;
+$datepicker-selected-outfocus: desaturate(lighten($secondary-color, 35%), 15%) !default;
+$secondary-color: color("teal", "lighten-1") !default;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+$link-color: color("light-blue", "darken-1") !default;
+@import "../materialize/materialize-src/sass/materialize.scss";
+nav,.nav-wrapper i{
+	height: 48px!important;
+	line-height: 48px!important;
+}
+
+body{background-color: $primary-color;}
+.side-nav{background-color: $primary-color;}
+.responsive-img{max-width: 100%;height: auto;}
+.card{margin: 0;}
+.card-tabs ul{
+	background-color: $primary-color;
+	li a{
+		color: white!important;
+	}
+}
+@media #{$small-and-down} {
+  // styles for small screens and down
+}
+@media #{$medium-and-up} {
+  // styles for medium screens and larger
+}
+@media #{$medium-and-down} {
+  // styles for medium screens and down
+}
+@media #{$large-and-up} {
+  // styles for large screens and up
+	nav{
+		background-color: transparent;
+		box-shadow: none;
+	}
+}
+@media #{$extra-large-and-up} {
+  // styles for extra large screens and up
+}
